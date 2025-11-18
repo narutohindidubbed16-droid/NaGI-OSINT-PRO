@@ -1,7 +1,10 @@
 python-telegram-bot==13.14
-python-telegram==0.0.1
 pymongo
 aiohttp
 python-dotenv
 Flask
 gunicorn
+requests
+Pillow
+httpx
+tgcrypto
