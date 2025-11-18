@@ -2,8 +2,8 @@
 # 📌 main.py
 # Run Nagi OSINT PRO Bot
 # ===============================
+
 from keep_alive import keep_alive
-keep_alive()
 import asyncio
 from telegram.ext import (
     ApplicationBuilder,
@@ -48,4 +48,5 @@ def main():
 # EXECUTE BOT
 # ==========================
 if __name__ == "__main__":
+    keep_alive()   # <-- YAHI RAKHO (Perfect Position)
     main()
