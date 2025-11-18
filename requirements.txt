@@ -1,8 +1,5 @@
-pyrogram==2.0.106
-tgcrypto
+python-telegram-bot==20.7
 requests
-aiohttp
-python-dotenv
-Pillow
-Flask
+flask
+pymongo
 httpx
