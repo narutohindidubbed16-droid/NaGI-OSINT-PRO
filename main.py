@@ -2,7 +2,8 @@
 # 📌 main.py
 # Run Nagi OSINT PRO Bot
 # ===============================
-
+from keep_alive import keep_alive
+keep_alive()
 import asyncio
 from telegram.ext import (
     ApplicationBuilder,
