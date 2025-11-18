@@ -1,66 +1,63 @@
-# ===========================
-# ⚙️ Nagi OSINT PRO – CONFIG
-# ===========================
+# ===============================
+# 📌 CONFIGURATION FILE
+# ===============================
 
-# Bot Information
-BOT_USERNAME = "@NaGIOsintProBot"
+# Bot Identity
+BOT_USERNAME = "NaGIOsintProBot"        # Without @
 BOT_NAME = "Nagi OSINT PRO"
 
-# Telegram Bot Token
+# Bot Token
 BOT_TOKEN = "PUT-YOUR-BOT-TOKEN-HERE"
 
-# ===========================
-# CHANNEL SETTINGS
-# ===========================
+# Channels
+MAIN_CHANNEL = "@AbdulBotz"             # Only this is checked in handlers.py
+PUBLIC_CHANNEL = "@AbdulBotz"           # For compatibility (same as MAIN)
+BACKUP_CHANNEL = "https://t.me/+mPzuc3vtf0c0ZWI9"    # NO CHECK, only informational
 
-# ✔ Only this channel is CHECKED by the bot  
-PUBLIC_CHANNEL = "@AbdulBotz"
-
-# ✔ Backup channel (PRIVATE) – NO join check
-BACKUP_CHANNEL = "https://t.me/+mPzuc3vtf0c0ZWI9"
-
-# ✔ Private Invite Link – NO join check
+# Private Invite Link
 PRIVATE_INVITE = "https://t.me/+hyVTTQkfJS41NTFl"
 
-# Owner / Support
+# Referral (optional handlers.py uses it)
+REFERRAL_ENABLED = True
+
+# Support Owner
 OWNER_USER = "@AbdulBitz"
 
-# ===========================
+# ============================
 # API ENDPOINTS
-# ===========================
+# Handlers.py specifically expects:
+# MOBILE_API, RC_API, PINCODE_API, IMEI_API, GST_API, IFSC_API
+# ============================
 
-API_MOBILE = "https://your-mobile-api.com/?num="
-API_GST = "https://your-gst-api.com/?gst="
-API_IFSC = "https://your-ifsc-api.com/?ifsc="
-API_PINCODE = "https://your-pincode-api.com/?pin="
-API_VEHICLE = "https://your-vehicle-api.com/?vno="
+MOBILE_API = "https://ph-ng-pi.vercel.app/?number="
+RC_API = "https://vvvin-ng.vercel.app/lookup?rc="
+PINCODE_API = "https://api.postalpincode.in/pincode/"
+IMEI_API = "https://ng-imei-info.vercel.app/?imei_num="
+GST_API = "https://your-gst-api.com/?gst="  # update with real API
+IFSC_API = "https://your-ifsc-api.com/?ifsc="  # update with real API
 
-# Future features (buttons only)
+# ============================
+# Coming Soon Tools
+# ============================
 COMING_SOON_LIST = [
     "Aadhaar Lookup",
     "PAN Lookup",
     "Voter ID Lookup",
     "Passport Lookup",
-    "Email OSINT",
+    "Email Lookup",
 ]
 
-# ===========================
-# FONTS / STYLING
-# ===========================
+# ============================
+# UI Fonts / Banner
+# ============================
 
 TITLE_FONT = "✦ 𝗡𝗮𝗴𝗶 𝗢𝗦𝗜𝗡𝗧 𝗣𝗥𝗢 ✦"
-
-CHECK = "✔️"
-CROSS = "❌"
-LOCK = "🔐"
-SEARCH = "🔎"
-BACK = "🔙"
 
 WELCOME_BANNER = f"""
 ✨ {TITLE_FONT} ✨
 
 🛡 Multi-Search Intelligence Platform  
-⚡ Real-Time Database Lookup System
+⚡ Real-Time Database Lookup Engine  
 
-Use buttons below to start.
+👇 Choose a Lookup Tool Below
 """
