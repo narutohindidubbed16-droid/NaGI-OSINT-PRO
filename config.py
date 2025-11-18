@@ -1,46 +1,30 @@
 # ===========================
-# CONFIG.PY (FINAL)
+# ⚙️ CONFIGURATION FILE
 # ===========================
 
 import os
 
-BOT_USERNAME = os.getenv("BOT_USERNAME")
-BOT_NAME = "Nagi OSINT PRO"
-BOT_TOKEN = os.getenv("TOKEN")
+# ============= BASIC BOT SETTINGS =============
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_USERNAME = os.getenv("BOT_USERNAME", "NaGIOsintProBot")
 
-MAIN_CHANNEL = os.getenv("MAIN_CHANNEL")      # Only public channel
-BACKUP_CHANNEL = os.getenv("BACKUP_CHANNEL")  # Private ok
+MAIN_CHANNEL = os.getenv("MAIN_CHANNEL", "@AbdulBitz")
+BACKUP_CHANNEL = os.getenv("BACKUP_CHANNEL", "@dummybackup")  # Just placeholder, check disabled
 
-PRIVATE_INVITE = os.getenv("PRIVATE_INVITE")
+START_CREDITS = 10   # same as handlers.py expects
 
-# ==========================
-# OTHER SETTINGS
-# ==========================
+# ============= API LINKS =============
 
-START_CREDITS = 5   # Required for handlers.py
+# Your working APIs
+MOBILE_API = os.getenv("API_MOBILE", "https://ph-ng-pi.vercel.app/?number=")
+PINCODE_API = os.getenv("API_PINCODE", "https://pincode-ng.vercel.app/lookup?pincode=")
+RC_API = os.getenv("API_VEHICLE", "https://vvvin-ng.vercel.app/lookup?rc=")
+IMEI_API = os.getenv("API_IMEI", "https://ng-imei-info.vercel.app/?imei_num=")
 
-COMING_SOON_LIST = [
-    "Aadhaar Lookup",
-    "PAN Lookup",
-    "Voter ID Lookup",
-    "Passport Lookup",
-    "Email OSINT",
-]
+# Not available (avoid errors by adding empty)
+GST_API = ""
+IFSC_API = ""
 
-BOLD = "𝗕𝗢𝗟𝗗"
-CHECK = "✔️"
-CROSS = "❌"
-LOCK = "🔐"
-SEARCH = "🔎"
-BACK = "🔙"        # Required for keyboards.py
-
-# ==========================
-# API LINKS
-# ==========================
-
-MOBILE_API = os.getenv("API_MOBILE")
-RC_API = os.getenv("API_VEHICLE")
-PINCODE_API = os.getenv("API_PINCODE")
-IMEI_API = os.getenv("API_IMEI")
-GST_API = os.getenv("API_GST")
-IFSC_API = os.getenv("API_IFSC")
+# ============= OTHER SETTINGS =============
+PRIVATE_INVITE = os.getenv("PRIVATE_INVITE", "")
+OWNER_USER = os.getenv("OWNER_USER", "@AbdulBitz")
