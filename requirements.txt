@@ -1,9 +1,6 @@
-pymongo
-pyrogram==2.0.106
-tgcrypto
-requests
+python-telegram-bot==20.7
 aiohttp
-python-dotenv
-Pillow
+pymongo
+dnspython
 Flask
 httpx
