@@ -1,28 +1,32 @@
 # ===========================
-# ⚙️ CONFIGURATION FILE
+# ⚙️ Nagi OSINT PRO – CONFIG
 # ===========================
+
+# Bot Information
 BOT_USERNAME = "@NaGIOsintProBot"
 BOT_NAME = "Nagi OSINT PRO"
 
+# Telegram Bot Token
 BOT_TOKEN = "PUT-YOUR-BOT-TOKEN-HERE"
 
-# Public Channel (must join)
-MAIN_CHANNEL = "@AbdulBitz"
+# ===========================
+# CHANNEL SETTINGS
+# ===========================
 
-# Private Backup Channel (must join)
-BACKUP_CHANNEL = "@mPzuc3vtf0c0ZWI9"
+# ✔ Only this channel is CHECKED by the bot  
+PUBLIC_CHANNEL = "@AbdulBotz"
 
-# Private Link Access (informational, not used for check)
+# ✔ Backup channel (PRIVATE) – NO join check
+BACKUP_CHANNEL = "https://t.me/+mPzuc3vtf0c0ZWI9"
+
+# ✔ Private Invite Link – NO join check
 PRIVATE_INVITE = "https://t.me/+hyVTTQkfJS41NTFl"
-
-# Referral System
-REFERRAL_ENABLED = True
 
 # Owner / Support
 OWNER_USER = "@AbdulBitz"
 
 # ===========================
-# API LINKS (Edit only URL)
+# API ENDPOINTS
 # ===========================
 
 API_MOBILE = "https://your-mobile-api.com/?num="
@@ -31,7 +35,7 @@ API_IFSC = "https://your-ifsc-api.com/?ifsc="
 API_PINCODE = "https://your-pincode-api.com/?pin="
 API_VEHICLE = "https://your-vehicle-api.com/?vno="
 
-# Future (not available yet)
+# Future features (buttons only)
 COMING_SOON_LIST = [
     "Aadhaar Lookup",
     "PAN Lookup",
@@ -41,11 +45,11 @@ COMING_SOON_LIST = [
 ]
 
 # ===========================
-# Stylish Text / Fonts
+# FONTS / STYLING
 # ===========================
 
 TITLE_FONT = "✦ 𝗡𝗮𝗴𝗶 𝗢𝗦𝗜𝗡𝗧 𝗣𝗥𝗢 ✦"
-BOLD = "𝗕𝗢𝗧"
+
 CHECK = "✔️"
 CROSS = "❌"
 LOCK = "🔐"
