@@ -1,5 +1,8 @@
 python-telegram-bot==20.7
 requests
+aiohttp
 flask
 pymongo
+python-dotenv
+pillow
 httpx
