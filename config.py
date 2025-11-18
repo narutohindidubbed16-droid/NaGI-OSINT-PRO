@@ -1,7 +1,7 @@
 # ===========================
 # ⚙️ CONFIGURATION FILE
 # ===========================
-
+BOT_USERNAME = "@NaGIOsintProBot"
 BOT_NAME = "Nagi OSINT PRO"
 
 BOT_TOKEN = "PUT-YOUR-BOT-TOKEN-HERE"
